@@ -1574,7 +1574,6 @@ html, body {
         padding-left: 10px;
         padding-right: 60px;
     }
-
     .faq__button {
         position: absolute;
         top: 35px;
@@ -1582,7 +1581,6 @@ html, body {
         width: 30px;
         height: 30px;
     }
-
     .faq__list-link::before, .faq__list-link::after {
         content: "";
         position: absolute;
@@ -1590,7 +1588,6 @@ html, body {
         right: 21px;
         width: 10px;
     }
-
     .faq__answer {
         font-size: 14px;
     }
