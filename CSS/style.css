@@ -722,7 +722,7 @@ html, body {
 .brands__grid {
     display: grid;
     grid-template: repeat(2, auto) / repeat(5, 1fr);
-    gap: 38px;
+    gap: 38px 2.9%;
 }
 
 .brands__grid-link {
@@ -949,7 +949,6 @@ html, body {
 }
 
 .faq_question {
-    margin-right: 30px;
     font-size: 24px;
     font-weight: 600;
     line-height: 150%;
@@ -1197,6 +1196,7 @@ html, body {
     .header__logo {
         margin-right: 30px;
     }
+
     .header__img {
         display: none;
     }
@@ -1234,21 +1234,41 @@ html, body {
         top: 30px;
         left: 350px;
     }
+
     /*------------------------------------------------*/
     .heading {
         font-size: 30px;
     }
+
     .steps__text {
         font-size: 12px;
     }
+
     .steps__list-item {
         min-height: 160px;
     }
+
     .steps__subtitle {
         font-size: 25px;
     }
+
     .steps__info {
         font-size: 14px;
+    }
+
+    /*------------------------------------------------*/
+    .brands__grid {
+        grid-template: repeat(2, auto) / repeat(5, 150px);
+        gap: 38px 2%;
+        justify-content: center;
+    }
+
+    .brands__grid-item {
+        display: flex;
+    }
+
+    .brands__grid-link img {
+        width: 100%;
     }
 }
 
@@ -1256,22 +1276,26 @@ html, body {
     .customers__customer {
         padding: 52px;
     }
+
     .customers__avatar {
         width: 54px;
         height: 54px;
     }
+
     .customers__name {
         font-size: 20px;
     }
+
     .customers__city {
         font-size: 14px;
     }
+
     .customers__feedback {
         font-size: 16px;
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 900px) {
     .burger {
         display: flex;
         flex-direction: column;
@@ -1380,28 +1404,41 @@ html, body {
         margin-right: 0;
         margin-bottom: 10px;
     }
+
     .header__title {
         width: 404px;
         font-size: 44px;
     }
+
     .header__button {
         width: 150px;
         white-space: nowrap;
         padding: 15px 15px;
         margin-right: 10px;
     }
+
     .header__horaires {
         width: 70%;
     }
+
     .header__adapt {
         display: none;
     }
+
     /*------------------------------------------------*/
     .CTA__number {
         font-size: 40px;
     }
+
     .CTA__value {
         font-size: inherit;
+    }
+
+    /*------------------------------------------------*/
+    .brands__grid {
+        grid-template: repeat(2, auto) / repeat(5, 120px);
+        gap: 38px 0%;
+        justify-content: center;
     }
 }
 
@@ -1409,45 +1446,69 @@ html, body {
     .steps__process {
         display: none;
     }
-    .steps__heading  {
+
+    .steps__heading {
         margin-bottom: 25px;
     }
+
     /*------------------------------------------------*/
     .CTA__content {
         max-width: 400px;
     }
+
     .CTA__text {
         font-size: 40px;
         padding: 20px 80px 0px;
     }
+
     .CTA__list-item {
         margin-right: 30px;
     }
+
     .CTA__list-item:last-child {
         margin-right: 0;
     }
+
     /*------------------------------------------------*/
     .customers__top {
         margin-bottom: 36px;
     }
+
     .customers__slider {
         margin-bottom: 27px;
     }
+
     .customers__slider-arrows {
         display: none;
     }
+
     .customers__avatar {
         width: 44px;
         height: 44px;
     }
+
     .customers__name {
         font-size: 14px;
     }
+
     .customers__city {
         font-size: 12px;
     }
+
     .customers__feedback {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    .brands__grid {
+        grid-template: repeat(5, auto) / repeat(2, auto);
+    }
+
+    /*------------------------------------------------*/
+    .faq_question {
+        font-size: inherit;
+        line-height: inherit;
     }
 }
 
@@ -1456,44 +1517,81 @@ html, body {
         min-width: none;
         width: 100%;
     }
+
     .header__title {
         width: 244px;
         font-size: 30px;
     }
+
     .header__btn-box {
         width: 70%;
     }
+
     .header__clock-icon {
         width: 22px;
     }
+
     .header__clocks {
         font-size: 14px;
     }
+
     /*------------------------------------------------*/
     .CTA__top {
         margin-bottom: 0;
     }
+
     .CTA__content {
         max-width: 280px;
     }
+
     .CTA__text {
         font-size: 24px;
         padding: 100px 30px 0px;
     }
+
     .CTA__button {
         margin-left: 31px;
     }
+
     .CTA__list {
         flex-direction: column;
     }
+
     .CTA__list-item {
         margin: 10px 0;
     }
+
     /*-------------------------------------------------*/
     .customers__customer {
         padding: 32px;
     }
+
     .customers__slider-dots button {
         width: 25px;
+    }
+    /*------------------------------------------------*/
+    .faq__list-link {
+        padding-left: 10px;
+        padding-right: 60px;
+    }
+
+    .faq__button {
+        position: absolute;
+        top: 35px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .faq__list-link::before, .faq__list-link::after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        right: 21px;
+        width: 10px;
+    }
+
+    .faq__answer {
+        font-size: 14px;
     }
 }
