@@ -414,7 +414,8 @@ html, body {
 }
 
 .offer__heading {
-    width: 858px;
+    width: 100%;
+    max-width: 858px;
     text-align: center;
     margin: 0 auto;
 }
@@ -431,8 +432,9 @@ html, body {
 }
 
 .offer__service {
-    width: 316px;
-    height: 232px;
+    width: 100%;
+    height: 100%;
+    min-height: 232px;
     background: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: 600;
@@ -1235,7 +1237,7 @@ html, body {
         left: 350px;
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .heading {
         font-size: 30px;
     }
@@ -1256,19 +1258,49 @@ html, body {
         font-size: 14px;
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .brands__grid {
         grid-template: repeat(2, auto) / repeat(5, 150px);
         gap: 38px 2%;
         justify-content: center;
     }
-
+    
     .brands__grid-item {
         display: flex;
     }
-
+    
     .brands__grid-link img {
         width: 100%;
+    }
+    /*------------------------------------*/
+    .blog__title {
+        margin-bottom: 30px;
+    }
+    .blog__filter-box {
+        margin-bottom: 23px;
+    }
+    .blog__filter-item {
+        font-size: 24px;
+    }
+    .blog__list {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+    .blog__item {
+        width: 100%;
+        max-width: 406px;
+    }
+    .blog__content {
+        padding: 24px 0;
+    }
+    .blog__subtitle {
+        font-size: 24px;
+    }
+    .blog__text {
+        font-size: 14px;
+    }
+    /*------------------------------------*/
+    .images__bg-image {
+        height: 300px;
     }
 }
 
@@ -1292,6 +1324,24 @@ html, body {
 
     .customers__feedback {
         font-size: 16px;
+    }
+    /*------------------------------------*/
+    .offer__content {
+        font-size: 18px;
+    }
+    .offer__content svg {
+        width: 38px;
+        height: 38px;
+    }
+    .offer__info {
+        width: 197px;
+    }
+    .offer__text {
+        font-size: 14px;
+    }
+    .offer__direct svg {
+        width: 43px;
+        height: 13px;
     }
 }
 
@@ -1425,7 +1475,7 @@ html, body {
         display: none;
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .CTA__number {
         font-size: 40px;
     }
@@ -1434,12 +1484,58 @@ html, body {
         font-size: inherit;
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .brands__grid {
         grid-template: repeat(2, auto) / repeat(5, 120px);
         gap: 38px 0%;
         justify-content: center;
     }
+    /*------------------------------------*/
+    .blog__filter-item {
+        font-size: 20px;
+    }
+    .blog__list {
+        grid-template: repeat(6, 1fr) / 280px;
+    }
+    .blog__image-box img {
+        width: 100%;
+    }
+    .blog__content {
+        padding: 14px 0;
+    }
+    .blog__post-time {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .blog__subtitle {
+        font-size: 20px;
+    }
+    .blog__text {
+        font-size: 12px;
+    }
+    /*------------------------------------*/
+    .main__questions {
+        padding: 120px 0;
+    }
+    .questions__heading {
+        margin-bottom: 30px;
+    }
+    .questions__content {
+        flex-direction: column;
+    }
+    .questions__form {
+        margin: 0 0 30px 0;
+    }
+    .questions__form-input::placeholder {
+        font-size: 12px;
+    }
+    .questions__form-text {
+        margin-bottom: 24px;
+    }
+    .questions__form-text::placeholder {
+        font-size: 12px;
+    }
+    
 }
 
 @media (max-width: 800px) {
@@ -1451,7 +1547,7 @@ html, body {
         margin-bottom: 25px;
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .CTA__content {
         max-width: 400px;
     }
@@ -1469,34 +1565,38 @@ html, body {
         margin-right: 0;
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .customers__top {
         margin-bottom: 36px;
     }
-
+    
     .customers__slider {
         margin-bottom: 27px;
     }
-
+    
     .customers__slider-arrows {
         display: none;
     }
-
+    
     .customers__avatar {
         width: 44px;
         height: 44px;
     }
-
+    
     .customers__name {
         font-size: 14px;
     }
-
+    
     .customers__city {
         font-size: 12px;
     }
-
+    
     .customers__feedback {
         font-size: 14px;
+    }
+    /*------------------------------------*/
+    .offer__services {
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     }
 }
 
@@ -1505,7 +1605,7 @@ html, body {
         grid-template: repeat(5, auto) / repeat(2, auto);
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .faq_question {
         font-size: inherit;
         line-height: inherit;
@@ -1535,7 +1635,7 @@ html, body {
         font-size: 14px;
     }
 
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .CTA__top {
         margin-bottom: 0;
     }
@@ -1561,7 +1661,7 @@ html, body {
         margin: 10px 0;
     }
 
-    /*-------------------------------------------------*/
+    /*------------------------------------*/
     .customers__customer {
         padding: 32px;
     }
@@ -1569,7 +1669,7 @@ html, body {
     .customers__slider-dots button {
         width: 25px;
     }
-    /*------------------------------------------------*/
+    /*------------------------------------*/
     .faq__list-link {
         padding-left: 10px;
         padding-right: 60px;
@@ -1590,5 +1690,9 @@ html, body {
     }
     .faq__answer {
         font-size: 14px;
+    }
+    /*------------------------------------*/
+    .offer__services {
+        grid-template: repeat(8, 1fr) / 1fr;
     }
 }
